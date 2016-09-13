@@ -179,7 +179,7 @@
 			var me = this;
 			$.ajax({
 				type : 'post',
-				url : './imgupload.php',
+				url : './head_img_upload.php',
 				data : me.postData,
 				/***必须false才会自动加上正确的Content-Type*/
 				contentType : false,
@@ -193,7 +193,7 @@
 				}else{
 					alert(result['error']);
 				}
-				
+
 			}).fail(function(err){
 				alert("upload fail!");
 			});
